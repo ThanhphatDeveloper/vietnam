@@ -18,4 +18,9 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::get('/blog', function () {
+    return 'home';
+});
+
+// Route::resource('/tours', TourController::class);
 Route::resource('/tours', TourController::class);
